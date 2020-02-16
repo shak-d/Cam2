@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="vitalinfo"
+        android:title="Sleep mode(AMOLED)"
+        android:summary="Turns off the majority of the display to decrease battery consumption, but still shows informations like battery percentage and recording time"
+        />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="cameraGrid"
+        android:title="Show grid"
+        android:summary="Enables the camera grid overlay"
+        />
+    <ListPreference
+        android:key="fps"
+        android:title="Playback frame rate"
+        android:entries="@array/fps"
+        android:entryValues="@array/fps"
+        />
+
+    <PreferenceCategory
+        android:title="Other"
+        />
+    <Preference
+        android:key="report"
+        android:title="Send a feedback"
+        android:summary="Report a problem or make a suggestion for new features or improvements"
+        />
+    <Preference
+        android:key="privacy"
+        android:title="Privacy"
+        />
+    <Preference
+        android:title="About"
+        android:enabled="false"
+        android:summary="Version 1.0"
+        />
+
+
+</PreferenceScreen>

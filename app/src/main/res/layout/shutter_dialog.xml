@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/transwhite"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select camera shutter speed:"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffffffff"
+            android:textStyle="bold"
+
+            />
+
+        <CheckBox
+            android:id="@+id/shutterCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+            android:text="Auto" />
+
+        <TextView
+            android:id="@+id/shutterValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:text="Shutter speed: " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="MIN" />
+
+            <SeekBar
+                android:id="@+id/ShutterBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:max="10"
+
+                android:progress="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="MAX" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

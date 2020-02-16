@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="25dp"
+    >
+    <NumberPicker
+        android:id="@+id/minPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        ></NumberPicker>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/minPick"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:text=":"
+        />
+
+    <NumberPicker
+        android:id="@+id/secPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+
+        android:layout_toEndOf="@id/textView"></NumberPicker>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/secPick"
+
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:text="." />
+
+    <NumberPicker
+        android:id="@+id/millisecPick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toEndOf="@id/textView2"></NumberPicker>
+
+    </LinearLayout>
+</LinearLayout>

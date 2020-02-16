@@ -1,0 +1,30 @@
+
+<LinearLayout android:id="@+id/sleeapingBueau"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/transblack"
+    android:keepScreenOn="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/Sline1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Sline2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Sline3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+</LinearLayout>

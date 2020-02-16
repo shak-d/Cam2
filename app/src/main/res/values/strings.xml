@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lapse</string>
+    <string name="request_permission">We need your authorization to start the camera.</string>
+    <string name="request_permission_storage">We need your authorization to save the recordings.</string>
+    <string name="request_permission_display">We need your authorization to give you the possibility to turn off the display while recording.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="intro_message">Hello</string>
+    <string name="title_activity_settings">Settings</string>
+    <string-array name="fps">
+
+        <item>30</item>
+        <item>60</item>
+
+    </string-array>
+
+</resources>
